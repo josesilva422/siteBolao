@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Pagamento via Pix</title>
+    <style>
+        /* Estilização Geral */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Card de Pagamento */
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+        }
+
+        .pix-logo {
+            width: 120px;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+
+        /* O Botão */
+        .btn-pix {
+            background-color: #32BCAD; /* Cor oficial do Pix */
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            display: block;
+            transition: background 0.3s ease, transform 0.2s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-pix:hover {
+            background-color: #2a9d91;
+            transform: translateY(-2px);
+        }
+
+        .btn-pix:active {
+            transform: translateY(0);
+        }
+
+        .security-info {
+            margin-top: 1.5rem;
+            font-size: 0.75rem;
+            color: #999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <a href="https://imgbb.com/"><img src="https://i.ibb.co/zVFFP4GC/sonsa.png" alt="sonsa" border="0"></a>
+        
+        <h2>Confirmar participação no Bolão</h2>
+        <p>Clique no botão abaixo para gerar seu QR Code ou copiar a chave de pagamento.</p>
+
+        <a href="https://nubank.com.br/cobrar/18lm4r/694ab25b-72ce-4e51-a487-a87f58f43133" target="_blank" class="btn-pix">
+            PAGAR COM PIX
+        </a>
+
+        <div class="security-info">
+            <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+            </svg>
+            Pagamento 100% Seguro via Banco Central
+        </div>
+    </div>
+
+</body>
+</html>
